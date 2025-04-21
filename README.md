@@ -86,4 +86,33 @@ Editar
 node server.js
 Abre tu navegador en http://localhost:3000 🚀
 
+✨ Funcionalidades:
 
+✅ Listado de usuarios
+
+✅ Crear nuevo usuario
+
+✅ Editar usuario existente
+
+✅ Eliminar usuario
+
+✅ Vistas con EJS
+
+✅ Estilos CSS personalizados
+
+🧪 Preparado para desplegar en plataformas como Render o Railway
+
+📤 Despliegue
+Puedes desplegar este proyecto en plataformas como:
+
+Render
+
+Railway
+
+Heroku (requiere plugin de MySQL externo)
+
+O usar tu propio VPS/Droplet
+
+🧑‍💻 Autor
+Desarrollado por Adrián Santana
+Con 💙 por el aprendizaje y el código abierto.
