@@ -37,7 +37,7 @@ proyecto-DB/
 
 1. **Clona el repositorio**:
 
-git clone https://github.com/tuusuario/proyecto-DB.git
+git clone https://github.com/tuusuario/proyecto-DB.git </br>
 cd proyecto-DB
 
 
@@ -49,9 +49,6 @@ npm install
 
 Asegúrate de tener una base de datos MySQL con la siguiente estructura:
 
-sql
-Copiar
-Editar
 CREATE DATABASE hello_mysql;
 
 USE hello_mysql;
@@ -69,9 +66,6 @@ También puedes tener otras tablas como empresas si extiendes el proyecto.
 
 Abre server.js y edita la configuración de conexión:
 
-js
-Copiar
-Editar
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -81,8 +75,6 @@ const db = mysql.createConnection({
 
 5. **Inicia el servidor**:
 
-Copiar
-Editar
 node server.js </br>
 Abre tu navegador en http://localhost:3000 🚀
 
