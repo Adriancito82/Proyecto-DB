@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuarios</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Lista de Usuarios</h1>
+
+    <a href="/crear">
+        <button style="margin-bottom: 20px;">Crear Nuevo Usuario</button>
+    </a>
+
+    <a href="/empresas">
+        <button style="margin-bottom: 20px;">Lista de Empresas</button>
+    </a>
+
+    <a href="/lenguajes">
+        <button style="margin-bottom: 20px;">Lista de Lenguajes</button>
+    </a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% users.forEach(function(user) { %>
+                <tr>
+                    <td>
+                        <%= user.user_id %>
+                    </td>
+                    <td>
+                        <%= user.name %>
+                    </td>
+                    <td>
+                        <%= user.surname %>
+                    </td>
+                    <td>
+                        <%= user.age %>
+                    </td>
+                    <td>
+                        <%= user.email %>
+                    </td>
+                    <td>
+                        <a href="/editar/<%= user.user_id%>">
+                            <button style="background-color: #2196F3;">Editar</button>
+                        </a>
+
+                        <form action="/delete/<%= user.user_id %>" method="POST" style="display:inline;">
+                            <button type="submit" style="background-color: #f44336;">Borrar</button>
+                        </form>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+</body>
+
+</html>
