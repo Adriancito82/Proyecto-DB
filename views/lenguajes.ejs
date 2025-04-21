@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuarios</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Lista de Lenguajes</h1>
+
+    <a href="/crear_lenguaje">
+        <button style="margin-bottom: 20px;">Crear Nuevo Lenguaje</button>
+    </a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% languages.forEach(function(language) { %>
+                <tr>
+                    <td>
+                        <%= language.language_id %>
+                    </td>
+                    <td>
+                        <%= language.name %>
+                    </td>
+                    <td>
+                        <form action="/borrar_lenguaje/<%= language.language_id %>" method="POST"
+                            style="display:inline;">
+                            <button type="submit" style="background-color: #f44336;">Borrar</button>
+                        </form>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+    <br>
+    <a href="/">Volver a la lista</a>
+</body>
