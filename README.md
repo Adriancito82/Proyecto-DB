@@ -83,7 +83,7 @@ const db = mysql.createConnection({
 
 Copiar
 Editar
-node server.js
+node server.js </br>
 Abre tu navegador en http://localhost:3000 🚀
 
 ✨ Funcionalidades:
@@ -102,7 +102,8 @@ Abre tu navegador en http://localhost:3000 🚀
 
 🧪 Preparado para desplegar en plataformas como Render o Railway
 
-📤 Despliegue
+📤 Despliegue:
+
 Puedes desplegar este proyecto en plataformas como:
 
 Render
