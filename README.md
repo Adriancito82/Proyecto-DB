@@ -16,20 +16,20 @@ Este es un proyecto simple de gestión de usuarios que implementa operaciones CR
 
 ## 📂 Estructura del proyecto
 
-proyecto-DB/
-    ├── public/ │
-            └── style.css
-    ├── views/ │
-        ├── crear.ejs │
-        ├── crear_empresa.ejs │
-        ├── crear_lenguaje.ejs │
-        ├── editar.ejs │
-        ├── index.ejs │
-        ├── lenguajes.ejs │
-        └── empresas.ejs
-    ├── server.js
-    ├── package.json
-    └── README.md
+proyecto-DB/</br>
+    ├── public/ │</br>
+            └── style.css</br>
+    ├── views/ │</br>
+        ├── crear.ejs │</br>
+        ├── crear_empresa.ejs │</br>
+        ├── crear_lenguaje.ejs │</br>
+        ├── editar.ejs │</br>
+        ├── index.ejs │</br>
+        ├── lenguajes.ejs │</br>
+        └── empresas.ejs</br>
+    ├── server.js</br>
+    ├── package.json</br>
+    └── README.md</br>
 
 ---
 
