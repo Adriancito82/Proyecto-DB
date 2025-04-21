@@ -81,7 +81,6 @@ const db = mysql.createConnection({
 
 5. **Inicia el servidor**:
 
-bash
 Copiar
 Editar
 node server.js
