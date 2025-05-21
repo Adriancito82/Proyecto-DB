@@ -6,7 +6,7 @@ const path = require('path');
 
 
 const app = express();
-//const PORT =  3306;
+const PORT =  3306;
 
 // Configuración de conexión a MySQL
 const db = mysql.createConnection({
@@ -179,6 +179,6 @@ app.post('/update/:id', async (req, res) => {
 
 // Iniciar servidor
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en ${process.env.DB_HOST}:${process.env.DB_PORT}`);
+  //console.log(`Servidor corriendo en ${process.env.DB_HOST}:${process.env.DB_PORT}`);
   console.log(`http://localhost:${PORT}`);
 });
