@@ -180,5 +180,5 @@ app.post('/update/:id', async (req, res) => {
 // Iniciar servidor
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en ${process.env.DB_HOST}:${process.env.DB_PORT}`);
-  //console.log(`http://localhost:${PORT}`);
+  console.log(`http://localhost:${PORT}`);
 });
