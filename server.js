@@ -6,7 +6,7 @@ const path = require('path');
 
 
 const app = express();
-const PORT =  process.env.DB_PORT || 3306;
+const PORT =  process.env.DB_PORT;
 
 // Configuración de conexión a MySQL
 const db = mysql.createConnection({
